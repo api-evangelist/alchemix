@@ -1,0 +1,180 @@
+name: Alchemix
+description: >-
+  Alchemix is a self-repaying DeFi protocol that allows users to take out
+  interest-free, non-liquidating loans against yield-bearing collateral. Users
+  deposit assets such as ETH, DAI, USDC, or USDT into yield-bearing vaults,
+  and the generated yield automatically repays the loan over time. The protocol
+  issues synthetic alAssets (alUSD, alETH) representing future yield, and
+  provides a Transmuter mechanism to stabilize alAsset prices by gradually
+  exchanging alAssets for underlying collateral. Alchemix operates on Ethereum
+  Mainnet, Optimism, and Arbitrum, with V3 in active development targeting 90%
+  LTV and Meta-Yield Tokens.
+image: https://alchemix.fi/favicon.ico
+tags:
+  - DeFi
+  - Self-Repaying Loans
+  - Synthetic Assets
+  - Yield
+  - Ethereum
+  - Blockchain
+  - Lending
+  - alUSD
+  - alETH
+  - ALCX
+url: https://alchemix.fi/
+apis:
+  - name: Alchemix Smart Contract API
+    description: >-
+      The primary developer interface for Alchemix is its on-chain smart
+      contracts deployed on Ethereum Mainnet, Optimism, and Arbitrum. Core
+      contracts include the Alchemist (vault deposits, borrowing, repayment,
+      liquidation, and harvesting), the Transmuter (alAsset-to-underlying
+      exchange), and the TransmuterBuffer (flow rate control between Alchemist
+      and Transmuter). Developers interact with these contracts via standard
+      EVM JSON-RPC using libraries such as ethers.js or viem.
+    image: https://alchemix.fi/favicon.ico
+    humanURL: https://docs.alchemix.fi
+    baseURL: https://ethereum.drpc.org
+    tags:
+      - Smart Contracts
+      - EVM
+      - Ethereum
+      - Optimism
+      - Arbitrum
+      - Alchemist
+      - Transmuter
+      - Vault
+    properties:
+      - type: Documentation
+        url: https://docs.alchemix.fi
+      - type: GitHubOrganization
+        url: https://github.com/alchemix-finance
+      - type: ContractDeployments
+        url: https://github.com/alchemix-finance/deployments
+      - type: SourceCode
+        url: https://github.com/alchemix-finance/v2-foundry
+    contact:
+      - FN: Alchemix Finance
+        email: admin@alchemix.fi
+  - name: Alchemix Subgraph API
+    description: >-
+      Alchemix uses The Graph protocol to index on-chain events and expose
+      yield data, harvest history, transmuter APR, and vault position data
+      via GraphQL. The subgraph is queried by the official Alchemix frontend
+      using an API key configured via VITE_SUBGRAPH_API_KEY. Developers can
+      query the subgraph through The Graph's decentralized network gateway
+      to access alAsset positions, transmuter state, yield strategy
+      performance, and historical protocol analytics.
+    image: https://storage.googleapis.com/subgraph-images/1649020435595thegraph.png
+    humanURL: https://thegraph.com/explorer?search=alchemix
+    baseURL: https://gateway.thegraph.com
+    tags:
+      - GraphQL
+      - Subgraph
+      - The Graph
+      - Yield Data
+      - Harvest History
+      - Analytics
+    properties:
+      - type: Documentation
+        url: https://thegraph.com/docs/en/subgraphs/querying/introduction/
+      - type: Explorer
+        url: https://thegraph.com/explorer?search=alchemix
+    contact:
+      - FN: The Graph Foundation
+        url: https://thegraph.com
+  - name: Alchemix Protocol Analytics API (DeFiLlama)
+    description: >-
+      DeFiLlama provides a free, public REST API for Alchemix protocol
+      analytics including TVL history, fee revenue, chain breakdowns, and
+      token data. The protocol slug for Alchemix is "alchemix". The API
+      returns current and historical TVL across Ethereum, Optimism, and
+      Arbitrum, annualized fees, cumulative revenue, market cap, and token
+      price data. No API key is required for normal usage, and the API
+      serves billions of requests per month with no rate limits for standard
+      traffic.
+    image: https://defillama.com/favicon.ico
+    humanURL: https://defillama.com/protocol/alchemix
+    baseURL: https://api.llama.fi
+    tags:
+      - Analytics
+      - TVL
+      - Revenue
+      - Fees
+      - Protocol Metrics
+      - DeFiLlama
+    properties:
+      - type: Documentation
+        url: https://api-docs.defillama.com/
+      - type: ProtocolPage
+        url: https://defillama.com/protocol/alchemix
+    contact:
+      - FN: DeFiLlama
+        url: https://defillama.com
+  - name: Alchemix Token Price API (CoinGecko)
+    description: >-
+      CoinGecko provides real-time and historical price data for all Alchemix
+      protocol tokens including ALCX (governance token), alUSD (synthetic
+      USD stablecoin), and alETH (synthetic ETH). Prices are aggregated across
+      multiple exchanges using global volume-weighted averages. The CoinGecko
+      API supports ALCX at coin ID "alchemix", alUSD at "alchemix-usd", and
+      alETH at "alchemix-eth". A free-tier API is available with rate limits;
+      a Pro API key removes limits.
+    image: https://static.coingecko.com/s/coingecko-logo-8903d34ce19ca4be1c81f0db30e924154750d2fad96cca0f27e7c60bcc3a3ead.png
+    humanURL: https://www.coingecko.com/en/coins/alchemix
+    baseURL: https://api.coingecko.com
+    tags:
+      - Price
+      - Market Data
+      - ALCX
+      - alUSD
+      - alETH
+      - CoinGecko
+    properties:
+      - type: Documentation
+        url: https://www.coingecko.com/api/documentation
+      - type: TokenPage
+        url: https://www.coingecko.com/en/coins/alchemix
+      - type: AlUSDPage
+        url: https://www.coingecko.com/en/coins/alchemix-usd
+      - type: AlETHPage
+        url: https://www.coingecko.com/en/coins/alchemix-eth
+    contact:
+      - FN: CoinGecko
+        url: https://www.coingecko.com
+  - name: Alchemix Yield Snapshot Storage API (Pinata/IPFS)
+    description: >-
+      Alchemix stores yield historic snapshots and transmuter APR data on
+      IPFS via Pinata. The Alchemix frontend retrieves this data using the
+      VITE_PINATA_KEY environment variable to access pinned JSON files
+      containing yield strategy performance history and transmuter timing
+      estimates. Developers can access the same IPFS-stored data through
+      public IPFS gateways or the Pinata API for building applications that
+      display historical yield data or estimate transmuter completion times.
+    image: https://www.pinata.cloud/favicon.ico
+    humanURL: https://www.pinata.cloud
+    baseURL: https://api.pinata.cloud
+    tags:
+      - IPFS
+      - Pinata
+      - Yield History
+      - Transmuter APR
+      - Decentralized Storage
+    properties:
+      - type: Documentation
+        url: https://docs.pinata.cloud
+      - type: GatewayURL
+        url: https://gateway.pinata.cloud
+    contact:
+      - FN: Pinata
+        url: https://www.pinata.cloud
+maintainers:
+  - FN: Alchemix Finance
+    email: admin@alchemix.fi
+    url: https://alchemix.fi
+    X-twitter: https://twitter.com/AlchemixFi
+    X-discord: https://discord.gg/alchemix
+    X-github: https://github.com/alchemix-finance
+    X-medium: https://alchemixfi.medium.com
+    X-governance: https://forum.alchemix.fi
+specificationVersion: "0.19"
