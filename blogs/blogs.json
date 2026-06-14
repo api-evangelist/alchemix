@@ -1,0 +1,49 @@
+{
+  "provider": "alchemix",
+  "source": "https://alchemixfi.medium.com/feed",
+  "fetched": "2026-06-14",
+  "posts": [
+    {
+      "title": "Introducing Alchemix v3",
+      "url": "https://alchemixfi.medium.com/introducing-alchemix-v3-037a2ed26ab6",
+      "published": "2026-05-04",
+      "summary": "Unveils the next generation protocol featuring 90% LTV vaults, Fixed-Yield Opportunities, Mix-Yield Token, and a New Era of Capital Efficiency with enhanced self-repaying loan mechanics and improved capital management."
+    },
+    {
+      "title": "Alchemix Q4 2025 Report Summary",
+      "url": "https://alchemixfi.medium.com/alchemix-q4-2025-report-summary-90dc43a65af4",
+      "published": "2026-03-05",
+      "summary": "Quarterly financial overview showing treasury decline to $10.64M and global deposits at $44.52M, highlighting v3 testnet progress and security achievements including Immunefi audit competition."
+    },
+    {
+      "title": "Introducing Mana: Alchemix v3 Migration Incentives",
+      "url": "https://alchemixfi.medium.com/introducing-mana-alchemix-v3-migration-incentives-ea47082ca433",
+      "published": "2026-01-22",
+      "summary": "Describes the Mana rewards system offering retroactive rewards for activity dating back to January 15th, 2025, with 10,000 rALCX distributed to ecosystem participants."
+    },
+    {
+      "title": "The Great Alchemix v3 Migration",
+      "url": "https://alchemixfi.medium.com/the-great-alchemix-v3-migration-df1c4d77ccdb",
+      "published": "2026-01-16",
+      "summary": "Details comprehensive migration plan from v2 to v3, explaining the one-week transition process and compensating users for their trust through the Migration Mana Program."
+    },
+    {
+      "title": "Alchemix Q3 2025 Report Summary",
+      "url": "https://alchemixfi.medium.com/alchemix-q3-2025-report-summary-75ea7b263c8a",
+      "published": "2025-12-22",
+      "summary": "Reports significant growth with treasury increasing 33.4% to $16.56M and global deposits reaching $63.52M, alongside successful Cantina security review completion."
+    },
+    {
+      "title": "Alchemix Q2 2025 Report Summary",
+      "url": "https://alchemixfi.medium.com/alchemix-q2-2025-report-summary-d31ec98cc4a9",
+      "published": "2025-11-20",
+      "summary": "Quarterly update highlighting 100,000 OP grant from Optimism and multiple security initiatives including SEAL Safe Harbor adoption and Immunefi Magnus protection."
+    },
+    {
+      "title": "Alchemix Q1 2025 Report Summary",
+      "url": "https://alchemixfi.medium.com/alchemix-q1-2025-report-summary-17c5eccec4c4",
+      "published": "2025-07-28",
+      "summary": "Q1 performance amid market downturn showing treasury decline to $12.32M despite generating $950K revenue and launching Wormhole cross-chain integration."
+    }
+  ]
+}

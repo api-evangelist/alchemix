@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Alchemix",
+  "description": "Alchemix is a self-repaying DeFi protocol that allows users to take out interest-free, non-liquidating loans against yield-bearing collateral. Users deposit assets such as ETH, DAI, USDC, or USDT into yield-bearing vaults, and the generated yield automatically repays the loan over time. The protocol issues synthetic alAssets (alUSD, alETH) representing future yield, and provides a Transmuter mechanism to stabilize alAsset prices by gradually exchanging alAssets for underlying collateral. Alchemix operates on Ethereum Mainnet, Optimism, and Arbitrum, with V3 in active development targeting 90% LTV and Meta-Yield Tokens.",
+  "url": "https://alchemix.fi/",
+  "logo": "https://alchemix.fi/favicon.ico",
+  "email": "admin@alchemix.fi",
+  "sameAs": [
+    "https://twitter.com/AlchemixFi",
+    "https://discord.gg/alchemix",
+    "https://github.com/alchemix-finance",
+    "https://alchemixfi.medium.com",
+    "https://forum.alchemix.fi"
+  ],
+  "keywords": [
+    "DeFi",
+    "Self-Repaying Loans",
+    "Synthetic Assets",
+    "Yield",
+    "Ethereum",
+    "Blockchain",
+    "Lending",
+    "alUSD",
+    "alETH",
+    "ALCX"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Alchemix APIs and Integrations",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Alchemix Smart Contract API",
+        "description": "The primary developer interface for Alchemix is its on-chain smart contracts deployed on Ethereum Mainnet, Optimism, and Arbitrum.",
+        "url": "https://docs.alchemix.fi"
+      },
+      {
+        "@type": "Offer",
+        "name": "Alchemix Subgraph API",
+        "description": "Alchemix uses The Graph protocol to index on-chain events and expose yield data, harvest history, transmuter APR, and vault position data via GraphQL.",
+        "url": "https://thegraph.com/explorer?search=alchemix"
+      },
+      {
+        "@type": "Offer",
+        "name": "Alchemix Protocol Analytics API (DeFiLlama)",
+        "description": "DeFiLlama provides a free, public REST API for Alchemix protocol analytics including TVL history, fee revenue, chain breakdowns, and token data.",
+        "url": "https://defillama.com/protocol/alchemix"
+      },
+      {
+        "@type": "Offer",
+        "name": "Alchemix Token Price API (CoinGecko)",
+        "description": "CoinGecko provides real-time and historical price data for all Alchemix protocol tokens including ALCX, alUSD, and alETH.",
+        "url": "https://www.coingecko.com/en/coins/alchemix"
+      },
+      {
+        "@type": "Offer",
+        "name": "Alchemix Yield Snapshot Storage API (Pinata/IPFS)",
+        "description": "Alchemix stores yield historic snapshots and transmuter APR data on IPFS via Pinata.",
+        "url": "https://www.pinata.cloud"
+      }
+    ]
+  }
+}
