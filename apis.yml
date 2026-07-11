@@ -169,3 +169,6 @@ maintainers:
   X-governance: https://forum.alchemix.fi
 modified: '2026-06-14'
 specificationVersion: '0.19'
+common:
+- type: DomainSecurity
+  url: security/alchemix-domain-security.yml
