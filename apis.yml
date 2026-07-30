@@ -7,6 +7,17 @@ description: Alchemix is a self-repaying DeFi protocol that allows users to take
   stabilize alAsset prices by gradually exchanging alAssets for underlying collateral.
   Alchemix operates on Ethereum Mainnet, Optimism, and Arbitrum, with V3 in active
   development targeting 90% LTV and Meta-Yield Tokens.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 image: https://alchemix.fi/favicon.ico
 tags:
 - DeFi
