@@ -181,5 +181,10 @@ maintainers:
 modified: '2026-06-14'
 specificationVersion: '0.19'
 common:
+- type: IssueTracker
+  url: https://github.com/alchemix-finance/v2-foundry/issues
+- type: License
+  name: MIT
+  url: https://github.com/alchemix-finance/v2-foundry/blob/master/LICENSE
 - type: DomainSecurity
   url: security/alchemix-domain-security.yml
