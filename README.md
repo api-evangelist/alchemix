@@ -1,4 +1,4 @@
-# Alchemix (alchemix)
+# Alchemix
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,140 +66,50 @@
 
 Alchemix is a self-repaying DeFi protocol that allows users to take out interest-free, non-liquidating loans against yield-bearing collateral. Users deposit assets such as ETH, DAI, USDC, or USDT into yield-bearing vaults, and the generated yield automatically repays the loan over time. The protocol issues synthetic alAssets (alUSD, alETH) representing future yield, and provides a Transmuter mechanism to stabilize alAsset prices by gradually exchanging alAssets for underlying collateral. Alchemix operates on Ethereum Mainnet, Optimism, and Arbitrum, with V3 in active development targeting 90% LTV and Meta-Yield Tokens.
 
-**APIs.json:** [https://alchemix.fi/](https://alchemix.fi/)
+**Areas:** DeFi · Self-Repaying Loans · Synthetic Assets · Yield · Ethereum · Blockchain · Lending · alUSD · alETH · ALCX
 
-## Tags
+## Alchemix on APIs.io
 
-- DeFi
-- Self-Repaying Loans
-- Synthetic Assets
-- Yield
-- Ethereum
-- Blockchain
-- Lending
-- alUSD
-- alETH
-- ALCX
+Everything profiled for Alchemix is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alchemix/](https://apis.io/providers/alchemix/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (5)
 
-- **Modified:** 2026-06-14
+- [Alchemix Smart Contract API](https://apis.io/apis/alchemix/alchemix-smart-contract-api/) — The primary developer interface for Alchemix is its on-chain smart contracts deployed on Ethereum Mainnet, Optimism, and Arbitrum. Core contracts include…
+- [Alchemix Subgraph API](https://apis.io/apis/alchemix/alchemix-subgraph-api/) — Alchemix uses The Graph protocol to index on-chain events and expose yield data, harvest history, transmuter APR, and vault position data via GraphQL. The…
+- [Alchemix Protocol Analytics API (DeFiLlama)](https://apis.io/apis/alchemix/alchemix-protocol-analytics-api-defillama/) — DeFiLlama provides a free, public REST API for Alchemix protocol analytics including TVL history, fee revenue, chain breakdowns, and token data. The…
+- [Alchemix Token Price API (CoinGecko)](https://apis.io/apis/alchemix/alchemix-token-price-api-coingecko/) — CoinGecko provides real-time and historical price data for all Alchemix protocol tokens including ALCX (governance token), alUSD (synthetic USD stablecoin),…
+- [Alchemix Yield Snapshot Storage API (Pinata/IPFS)](https://apis.io/apis/alchemix/alchemix-yield-snapshot-storage-api-pinataipfs/) — Alchemix stores yield historic snapshots and transmuter APR data on IPFS via Pinata. The Alchemix frontend retrieves this data using the VITE_PINATA_KEY…
 
-## APIs
+### Published properties
 
-### Alchemix Smart Contract API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The primary developer interface for Alchemix is its on-chain smart contracts deployed on Ethereum Mainnet, Optimism, and Arbitrum. Core contracts include the Alchemist (vault deposits, borrowing, repayment, liquidation, and harvesting), the Transmuter (alAsset-to-underlying exchange), and the TransmuterBuffer (flow rate control between Alchemist and Transmuter). Developers interact with these contracts via standard EVM JSON-RPC using libraries such as ethers.js or viem.
+#### GraphQL (1)
 
-- **Human URL:** [https://docs.alchemix.fi](https://docs.alchemix.fi)
-- **Base URL:** `https://ethereum.drpc.org`
+GraphQL schemas.
 
-#### Tags
+- [Alchemix GraphQL API](https://apis.io/graphqls/alchemix/alchemix-graphql/)
 
-- Smart Contracts
-- EVM
-- Ethereum
-- Optimism
-- Arbitrum
-- Alchemist
-- Transmuter
-- Vault
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://docs.alchemix.fi)
-- [GitHub Organization](https://github.com/alchemix-finance)
-- [Contract Deployments](https://github.com/alchemix-finance/deployments)
-- [Source Code](https://github.com/alchemix-finance/v2-foundry)
-- [Graph Q L](graphql/alchemix-graphql.md)
+- [Alchemix Domain Security](https://apis.io/security/alchemix/alchemix-domain-security/)
 
-### Alchemix Subgraph API
+## API Evangelist rating
 
-Alchemix uses The Graph protocol to index on-chain events and expose yield data, harvest history, transmuter APR, and vault position data via GraphQL. The subgraph is queried by the official Alchemix frontend using an API key configured via VITE_SUBGRAPH_API_KEY. Developers can query the subgraph through The Graph's decentralized network gateway to access alAsset positions, transmuter state, yield strategy performance, and historical protocol analytics.
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-- **Human URL:** [https://thegraph.com/explorer?search=alchemix](https://thegraph.com/explorer?search=alchemix)
-- **Base URL:** `https://gateway.thegraph.com`
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-#### Tags
+## How this profile is made
 
-- GraphQL
-- Subgraph
-- The Graph
-- Yield Data
-- Harvest History
-- Analytics
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-#### Properties
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alchemix: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- [Documentation](https://thegraph.com/docs/en/subgraphs/querying/introduction/)
-- [Explorer](https://thegraph.com/explorer?search=alchemix)
+## Open an issue
 
-### Alchemix Protocol Analytics API (DeFiLlama)
-
-DeFiLlama provides a free, public REST API for Alchemix protocol analytics including TVL history, fee revenue, chain breakdowns, and token data. The protocol slug for Alchemix is "alchemix". The API returns current and historical TVL across Ethereum, Optimism, and Arbitrum, annualized fees, cumulative revenue, market cap, and token price data. No API key is required for normal usage, and the API serves billions of requests per month with no rate limits for standard traffic.
-
-- **Human URL:** [https://defillama.com/protocol/alchemix](https://defillama.com/protocol/alchemix)
-- **Base URL:** `https://api.llama.fi`
-
-#### Tags
-
-- Analytics
-- TVL
-- Revenue
-- Fees
-- Protocol Metrics
-- DeFiLlama
-
-#### Properties
-
-- [Documentation](https://api-docs.defillama.com/)
-- [Protocol Page](https://defillama.com/protocol/alchemix)
-
-### Alchemix Token Price API (CoinGecko)
-
-CoinGecko provides real-time and historical price data for all Alchemix protocol tokens including ALCX (governance token), alUSD (synthetic USD stablecoin), and alETH (synthetic ETH). Prices are aggregated across multiple exchanges using global volume-weighted averages. The CoinGecko API supports ALCX at coin ID "alchemix", alUSD at "alchemix-usd", and alETH at "alchemix-eth". A free-tier API is available with rate limits; a Pro API key removes limits.
-
-- **Human URL:** [https://www.coingecko.com/en/coins/alchemix](https://www.coingecko.com/en/coins/alchemix)
-- **Base URL:** `https://api.coingecko.com`
-
-#### Tags
-
-- Price
-- Market Data
-- ALCX
-- alUSD
-- alETH
-- CoinGecko
-
-#### Properties
-
-- [Documentation](https://www.coingecko.com/api/documentation)
-- [Token Page](https://www.coingecko.com/en/coins/alchemix)
-- [Al U S D Page](https://www.coingecko.com/en/coins/alchemix-usd)
-- [Al E T H Page](https://www.coingecko.com/en/coins/alchemix-eth)
-
-### Alchemix Yield Snapshot Storage API (Pinata/IPFS)
-
-Alchemix stores yield historic snapshots and transmuter APR data on IPFS via Pinata. The Alchemix frontend retrieves this data using the VITE_PINATA_KEY environment variable to access pinned JSON files containing yield strategy performance history and transmuter timing estimates. Developers can access the same IPFS-stored data through public IPFS gateways or the Pinata API for building applications that display historical yield data or estimate transmuter completion times.
-
-- **Human URL:** [https://www.pinata.cloud](https://www.pinata.cloud)
-- **Base URL:** `https://api.pinata.cloud`
-
-#### Tags
-
-- IPFS
-- Pinata
-- Yield History
-- Transmuter APR
-- Decentralized Storage
-
-#### Properties
-
-- [Documentation](https://docs.pinata.cloud)
-- [Gateway U R L](https://gateway.pinata.cloud)
-
-## Maintainers
-
-**FN:** Alchemix Finance
-**Email:** admin@alchemix.fi
-**URL:** https://alchemix.fi
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alchemix/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
